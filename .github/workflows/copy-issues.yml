@@ -2,6 +2,9 @@ name: "Copy issues"
 on:
   workflow_dispatch:
 
+permissions:
+  issues: write
+
 jobs:
   get-issue-labels:
     if: github.repository != 'yumemi-inc/android-engineer-codecheck'
